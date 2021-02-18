@@ -5,7 +5,7 @@ import random
 import string
 
 
-hash = SHA384.new()
+hash = SHA1.new()
 fake = Faker('zh_TW')
 time_arr = []
 for i in range(100):
