@@ -7,10 +7,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-x = np.random.normal(size=50000)
-y = x * 3 + np.random.normal(size=50000)
-plt.hist2d(x, y, bins=(50, 50), cmap=plt.cm.Reds)
-
 # Add a basic title
 plt.title("A 2D histogram")
 
@@ -29,3 +25,6 @@ for i in range(100):
 
 print((sum(time_arr)/len(time_arr))/(10 ** 9),end="")
 print('秒')
+
+plt.plot(time_arr)
+plt.show()
