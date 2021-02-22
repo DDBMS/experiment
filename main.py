@@ -27,4 +27,5 @@ print((sum(time_arr) / len(time_arr)) / (10 ** 9), end="")
 print('秒')
 
 plt.plot(time_arr)
+plt.savefig('../fig.png')
 plt.show()
