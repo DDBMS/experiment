@@ -7,13 +7,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Add a basic title
-plt.title("A 2D histogram")
+plt.title("SHA384 Benchmark")
 
 hash = SHA384.new()
 fake = Faker('zh_TW')
 time_arr = []
-for i in range(50):
-    str_test = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(int(10 ** 5.5)))
+for i in range(200):
+    str_test = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(int(10 ** 6)))
 
     x = time.time_ns()
     hash.update(str_test.encode("utf8"))
