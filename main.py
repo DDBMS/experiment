@@ -27,6 +27,6 @@ print((sum(time_arr) / len(time_arr)) / (10 ** 9), end="")
 print('秒')
 
 plt.plot(time_arr)
-plt.figtext(0.3, 0.02, "Average: {} second / {} items".format((sum(time_arr) / len(time_arr)) / (10 ** 9), len(time_arr)))
+plt.figtext(0.3, 0.02, "Average: {:.7f} second / {} items".format((sum(time_arr) / len(time_arr)) / (10 ** 9), len(time_arr)))
 plt.savefig('../fig.png')
 plt.show()
