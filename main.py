@@ -12,7 +12,7 @@ plt.title("SHA384 Benchmark")
 hash = SHA384.new()
 fake = Faker('zh_TW')
 time_arr = []
-for i in range(200):
+for i in range(5):
     str_test = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(int(10 ** 6)))
 
     x = time.time_ns()
@@ -27,5 +27,6 @@ print((sum(time_arr) / len(time_arr)) / (10 ** 9), end="")
 print('秒')
 
 plt.plot(time_arr)
+plt.figtext(0.33, 0.02, "Average: {} second / {} items".format((sum(time_arr) / len(time_arr)) / (10 ** 9), len(time_arr)))
 plt.savefig('../fig.png')
 plt.show()
