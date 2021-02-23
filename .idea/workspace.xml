@@ -68,6 +68,9 @@
       <module name="experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="D:\ProgramData\Anaconda3\envs\Experiment\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -96,7 +99,8 @@
       <workItem from="1613748827722" duration="162000" />
       <workItem from="1613750086799" duration="6000" />
       <workItem from="1613968399157" duration="1358000" />
-      <workItem from="1614006708154" duration="4049000" />
+      <workItem from="1614006708154" duration="4148000" />
+      <workItem from="1614059694959" duration="90000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1613748881707</created>
@@ -161,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614010458479</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update">
+      <created>1614010856185</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614010856185</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

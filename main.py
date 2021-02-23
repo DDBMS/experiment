@@ -9,7 +9,7 @@ import numpy as np
 # Add a basic title
 plt.title("SHA384 Benchmark")
 
-hash = SHA384.new()
+hash = MD5.new()
 fake = Faker('zh_TW')
 time_arr = []
 for i in range(200):
